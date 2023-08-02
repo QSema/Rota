@@ -1,0 +1,823 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+#header{
+    width: 100%;
+    height: 7.5vh;
+    background-color: rgb(47,46,46);
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#header ul{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#header ul a{
+    text-align: center;
+    line-height: 24px;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+    text-decoration: none;
+}
+
+#header ul a .per{
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    color:  rgb(47,46,46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border: 3px solid white;
+    margin-right: 5px;
+}
+
+#header a:hover{
+    color:  rgb( 176,170,169);
+}
+
+/* section-1 */
+
+#hero-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+}
+
+#hero-section video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100vh;
+    z-index: 1;
+}
+
+#hero-section .jade{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    position: relative;
+    z-index: 3;
+    animation-name: jade;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+.jade h1{
+    line-height: 1em;
+    text-align: center;
+    font-size: 68px;
+    color: white;
+    font-weight: 600;
+}
+
+@keyframes jade{
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 50%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    75%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+.jade p{
+    letter-spacing: 0.19em;
+    text-align: center;
+    font-size: 19px;
+    color: rgb( 255,255,255);
+}
+
+.a{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 80px;
+    bottom: 30px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a .tus{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 80px;
+    bottom: 30px;
+    z-index: 3;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    border: solid black 1px;
+    cursor: pointer;
+}
+
+.tus img{
+    width: 30px;
+    height: 30px;
+    opacity: 50%;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    cursor: pointer;
+}
+
+@keyframes arrow{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }    
+}
+
+
+#hero-section nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#hero-section nav img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+
+/* section-2 */
+
+#hero{
+    width: 100%;
+    height: 67vh;
+    background-image: url(/assets/img/pexels-elīna-arāja-3377405.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#hero .serv{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.serv h2{
+    text-align: center;
+    font-size: 34px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.serv span{
+    color: white;
+    width: 2.2%;
+    min-height: 3.2px;
+    background-color: white;
+    border-radius: 1px;
+    margin-top: 10px;
+}
+
+
+#hero .black{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+
+.black .rep{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.black .up {
+    width: 21%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.black .paint{
+    width: 21%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.black h3{
+    line-height: 1.1em;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.black p{
+    text-align: center;
+    line-height: 1.4em;
+    font-size: 17px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* section-3 */
+#cars{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+    position: relative;
+    background-color:  rgb(47,46,46);
+}
+
+
+#cars .our{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-bottom: 50px;
+}
+
+.our h2{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+    font-weight: 300;
+    color: white;
+}
+
+.our span{
+    color: white;
+    width: 2.2%;
+    min-height: 3px;
+    background-color: white;
+    border-radius: 1px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.our p{
+    line-height: 1.2em;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    color: white;
+}
+
+#cars .pics{
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 90px;
+}
+
+.pics .img1{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* animation-name: flip1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s; */
+}
+.img1 .car1{
+    animation-name: flip1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.img1 .car2{
+    animation-name: flip2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.img1 .car3{
+    animation-name: flip1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+/* @keyframes flip1 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(200px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
+
+
+.pics .img2{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    /* animation-name: flip2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s; */
+}
+.img2 .car4{
+    animation-name: flip2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.img2 .car5{
+    animation-name: flip1;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+.img2 .car6{
+    animation-name: flip2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+/* @keyframes flip2 {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-200px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    75%{
+        transform: translateX(200px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+} */
+
+
+.pics img{
+    width: 33%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes flip1{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+@keyframes flip2{
+    0%{
+        transform: scale(1);
+    }
+    25%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/* section-4 */
+
+#us{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: url(/assets/img/pexels-elīna-arāja-3377405.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#us .about{
+    width: 36%;
+    height: 68%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    animation-name: about;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+
+@keyframes about{
+    0%{
+        transform: translate(0px);
+    }
+    /* 15%{
+        transform: skew(100px);
+    } */
+    25%{
+        transform: translate(200px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    75%{
+        transform: translate(-200px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+.about h2{
+    text-align: center;
+    font-size: 34px;
+    margin: 30px 0 10px 0;
+    font-weight: 300;
+}
+
+.about span{
+    color: black;
+    width: 5.2%;
+    min-height: 3px;
+    background-color: black;
+    border-radius: 1px;
+    margin-top: 5px;
+}
+
+.about .p{
+    width: 69%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.about .p p{
+    line-height: 1.4em;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* section5 */
+
+.kiz{
+    width: 100%;
+    height: 55vh;
+    background-image: url(/assets/img/pexels-nordic-overdrive-627678.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* section-6 */
+
+#find{
+    width: 100%;
+    height: 115vh;
+    background-image: url(/assets/img/pexels-elīna-arāja-3377405.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#find img{
+    width: 280px;
+    height: 235px;
+    animation-name: yuk;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes yuk{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#find .mon{
+    width: 36%;
+    height: 65%;
+    bottom: 30%;
+    right: 50%;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: white;
+}
+
+.mon .fd{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fd h2{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.fd span{
+    color: black;
+    width: 6%;
+    min-height: 3.2px;
+    background-color: black;
+    border-radius: 1px;
+}
+
+.mon .esas{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+
+.mon .terry{
+    width: 50%;
+    height: 100%;
+    padding-left: 45px;
+}
+
+.mon .terry .street{
+    width: 100%;
+    height: 32%;
+    padding-top: 5px;
+}
+
+.street .ch{
+    line-height: 1.2em;
+    font-size: 17px;
+}
+
+.street .ifo{
+    line-height: 1.2em;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.street .tel{
+    line-height: 1.2em;
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+.terry .opening{
+    width: 100%;
+    height: 32%;
+}
+
+.opening h3{
+    line-height: 1.2em;
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: 400;
+}
+
+.opening p{
+    line-height: 1.2em;
+    font-size: 17px;
+}
+
+.mon .in{
+    width: 50%;
+    height: 100%;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 45px;
+}
+
+.in label{
+    line-height: 1.2em;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.in label span{
+    color: brown;
+}
+.in input{
+    padding: 6.5px;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    transition: all .3s ease-in-out;
+
+
+} .in input:hover{
+    border: 1px solid rgb(119, 118, 118);
+}
+
+.in textarea{
+    margin-top: 10px;
+}
+
+.in button{
+    margin-top: 15px;
+    padding: 8px;
+    background-color: rgb( 47,46,46);
+    color: white;
+    border: 1px solid rgb( 47,46,46);
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.in button:hover{
+    background-color: rgb(110,105,104);
+    border-color: rgb(110,105,104);
+}
+
+/* footer */
+#footer{
+    width: 100%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(47,46,46);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#footer .nav{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer .nav img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    margin: 0 6px;
+    cursor: pointer;
+}
+
+#footer .wx{
+    width: 100%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wx p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+.wx p a{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
